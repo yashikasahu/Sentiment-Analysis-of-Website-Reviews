@@ -1,4 +1,4 @@
-1. Data Collection
+***1. Data Collection***
 
 I collected a dataset of website reviews (Flipkart product reviews in this demo).
 Below is the screenshot of raw extracted reviews:
@@ -6,7 +6,7 @@ Below is the screenshot of raw extracted reviews:
 <img width="1329" height="630" alt="Screenshot 2025-11-30 142712" src="https://github.com/user-attachments/assets/e9561d32-0009-4ec6-bc47-38c58ea58c8c" />
 
 
-2. Sentiment Analysis Using VADER
+***2. Sentiment Analysis Using VADER***
 
 The reviews were processed using NLTK’s VADER sentiment analyzer.
 The model is especially good at understanding:
@@ -26,13 +26,13 @@ Code Screenshot
 
 
 Code Logic Summary
-1. Load dataset
+*1. Load dataset*
 
 Import reviews from CSV
 
 2. Apply VADER sentiment model
 
-Polarity scores
+*Polarity scores*
 
 Compound score thresholding
 
@@ -42,11 +42,11 @@ compound ≤ –0.05 → NEGATIVE
 
 otherwise → NEUTRAL
 
-3. Save output
+*3. Save output*
 
 A new CSV with predicted sentiment for each review
 
-3. Crux (Overall Review Summary)
+***3. Crux (Overall Review Summary)***
 
 To generate a human-readable summary, I used TextBlob polarity and keyword extraction.
 
@@ -54,7 +54,7 @@ Crux Code Screenshot
 <img width="1355" height="667" alt="Screenshot 2025-11-30 142756" src="https://github.com/user-attachments/assets/011f4af8-6d46-4e87-8be1-70196add61f6" />
 
 
-Output
+***Output***
 Most users praise the iPhone 16 Pro for its awesome, great, overall performance.  
 A few reviews were neutral or mixed in sentiment.
 
@@ -89,21 +89,21 @@ Sentiment-Analysis-of-Website-Reviews/
 │
 │── README.md
 
-Installation & Usage
-1. Clone the Repository
+***Installation & Usage***
+*1. Clone the Repository*
 git clone https://github.com/your-username/Sentiment-Analysis-of-Website-Reviews.git
 cd Sentiment-Analysis-of-Website-Reviews
 
-2. Install Dependencies
+*2. Install Dependencies*
 pip install nltk pandas textblob
 
-3. Run VADER Sentiment Script
+*3. Run VADER Sentiment Script*
 python src/vader_sentiment.py
 
-4. Generate Crux Summary
+4*. Generate Crux Summary*
 python src/crux_generator.py
 
-Results
+***Results***
 Sentiment Ratio (Approx.)
 
 Positive: 80–90%
@@ -112,7 +112,7 @@ Neutral: 5–10%
 
 Negative: 2–5%
 
-Summary
+***Summary***
 
 Most customers express high satisfaction, especially around performance, camera, colors, and overall experience.
 Only a small percentage of reviews mention minor concerns.
@@ -127,6 +127,6 @@ Build a Streamlit UI for real-time sentiment checking
 
 Deploy via Flask API
 
-License
+*License*
 
 MIT License
