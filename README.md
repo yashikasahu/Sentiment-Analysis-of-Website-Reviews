@@ -26,11 +26,11 @@ Code Screenshot
 
 
 <h1>Code Logic Summary</h1>
-*1. Load dataset*
+<h3>1. Load dataset</h3>
 
 Import reviews from CSV
 
-2. Apply VADER sentiment model
+<h3>2. Apply VADER sentiment model</h3>
 
 *Polarity scores*
 
@@ -42,7 +42,7 @@ compound ≤ –0.05 → NEGATIVE
 
 otherwise → NEUTRAL
 
-*3. Save output*
+<h3>3. Save output</h3>
 
 A new CSV with predicted sentiment for each review
 
@@ -90,17 +90,17 @@ Sentiment-Analysis-of-Website-Reviews/
 │── README.md
 
 <h1>Installation & Usage</h1>
-*1. Clone the Repository*
+<h3>1. Clone the Repository</h3>
 git clone https://github.com/your-username/Sentiment-Analysis-of-Website-Reviews.git
 cd Sentiment-Analysis-of-Website-Reviews
 
-*2. Install Dependencies*
+<h3>2. Install Dependencies</h3>
 pip install nltk pandas textblob
 
-*3. Run VADER Sentiment Script*
+<h3>3. Run VADER Sentiment Script</h3>
 python src/vader_sentiment.py
 
-4*. Generate Crux Summary*
+<h3>4. Generate Crux Summary</h3>
 python src/crux_generator.py
 
 <h1>Results</h1>
@@ -127,6 +127,6 @@ Build a Streamlit UI for real-time sentiment checking
 
 Deploy via Flask API
 
-*License*
+<h3>*License*</h3>
 
 MIT License
